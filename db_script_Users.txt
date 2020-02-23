@@ -1,0 +1,17 @@
+use MovieBookingDB;
+
+db.Users.drop();
+
+db.createCollection('Users');
+db.Users.createIndex({emailid:1},{unique:true});
+db.Users.insertOne({firstname:"user1",
+					lastname:"user1",
+				    emailid:"user1@gmail.com",
+				    password:"User1@123"
+					});
+
+db.Users.insertOne({firstname:"admin1",
+					lastname:"admin1",
+				    emailid:"admin1@gmail.com",
+				    password:"Admin1@123"
+					});

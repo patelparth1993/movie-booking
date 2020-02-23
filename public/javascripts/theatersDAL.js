@@ -1,5 +1,6 @@
 var mongojs = require("mongojs");
 var dbConnect = mongojs("MovieBookingDB");
+//var dbConnect=mongojs('username:password@example.com/mydbname',['Theaters'])
 
 var theatersDAL = {};
 

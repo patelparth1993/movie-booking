@@ -31,3 +31,15 @@ Error: Requested page does not exists
     at param (F:\Angular\MovieBookingApp\movie-booking-server\node_modules\express\lib\router\index.js:365:14)
     at param (F:\Angular\MovieBookingApp\movie-booking-server\node_modules\express\lib\router\index.js:365:14)
     at Function.process_params (F:\Angular\MovieBookingApp\movie-booking-server\node_modules\express\lib\router\index.js:410:3)
+Error: No movies for selected region
+    at F:\MyProjects\MovieBookingApp\movie-booking-server\public\javascripts\theatersBL.js:14:13
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Error: No movies for selected region
+    at F:\MyProjects\MovieBookingApp\movie-booking-server\public\javascripts\theatersBL.js:14:13
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Error: No movies for selected region
+    at F:\MyProjects\MovieBookingApp\movie-booking-server\public\javascripts\theatersBL.js:14:13
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)

@@ -1,0 +1,437 @@
+use MovieBookingDB;
+
+db.Theaters.drop();
+
+db.createCollection('Theaters');
+db.Theaters.createIndex({"theaterId":1},{"unique":true});
+db.Theaters.insertOne({theaterId:1,
+					   theaterName:"Cinepolis Banajara Hills",
+					   city:"Delhi",
+					   movie:[
+								{
+									name:"Pk",
+									language:"Hindi",
+									dimension:"2D",
+									rating:4,
+									imageSrc:"assets/imgs/images3.jpeg.jpg",
+									showTimings:{1000:100,
+												 1200:150,
+												 1500:200,
+												 1930:300
+												 }
+								},
+								{
+									name:"Dark Knight",
+									language:"English",
+									dimension:"3D",
+									rating:5,
+									imageSrc:"assets/imgs/images1.jpeg.jpg",
+									showTimings:{1100:150,
+												 1300:170,
+												 1600:200,
+												 2030:350
+												 }
+								},
+								{
+									name:"The Deathly Hallows-2",
+									language:"English",
+									dimension:"3D",
+									rating:4,
+									imageSrc:"assets/imgs/images.jpeg.jpg",
+									showTimings:{1100:150,
+												 1300:170,
+												 1600:200,
+												 2030:350
+												 }
+								},
+								{
+									name:"Badla",
+									language:"Hindi",
+									dimension:"2D",
+									rating:3,
+									imageSrc:"assets/imgs/images4.jpeg.jpg",
+									showTimings:{900:100,
+												 1400:150,
+												 2130:300
+												}
+								}
+							]
+							
+						});
+
+
+db.Theaters.insertOne({theaterId:2,
+					   theaterName:"PVR Chandni Chowk",
+					   city:"Delhi",
+					   movie:[
+								{
+									name:"Pk",
+									language:"Hindi",
+									dimension:"2D",
+									rating:4,
+									imageSrc:"assets/imgs/images3.jpeg.jpg",
+									showTimings:{1000:100,
+												 1200:150,
+												 1500:200,
+												 1930:300
+												 }
+								},
+								{
+									name:"Dark Knight",
+									language:"English",
+									dimension:"3D",
+									rating:5,
+									imageSrc:"assets/imgs/images1.jpeg.jpg",
+									showTimings:{1100:150,
+												 1300:170,
+												 1600:200,
+												 2030:350
+												 }
+								},
+								{
+									name:"The Deathly Hallows-2",
+									language:"Hindi",
+									dimension:"3D",
+									rating:4,
+									imageSrc:"assets/imgs/images.jpeg.jpg",
+									showTimings:{1100:150,
+												 1300:170,
+												 1600:200,
+												 2030:350
+												 }
+								},
+								{
+									name:"Badla",
+									language:"Hindi",
+									dimension:"2D",
+									rating:3,
+									imageSrc:"assets/imgs/images4.jpeg.jpg",
+									showTimings:{900:100,
+												 1400:150,
+												 2130:300
+												}
+								}
+							]
+							
+						});
+
+db.Theaters.insertOne({theaterId:3,
+					   theaterName:"IMAX Marine Drive",
+					   city:"Mumbai",
+					   movie:[
+								{
+									name:"Pk",
+									language:"Hindi",
+									dimension:"2D",
+									rating:4,
+									imageSrc:"assets/imgs/images3.jpeg.jpg",
+									showTimings:{1000:200,
+												 1200:250,
+												 1500:300,
+												 1930:400
+												 }
+								},
+								{
+									name:"Dark Knight",
+									language:"English",
+									dimension:"3D",
+									rating:5,
+									imageSrc:"assets/imgs/images1.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"The Deathly Hallows-2",
+									language:"Hindi",
+									dimension:"3D",
+									rating:4,
+									imageSrc:"assets/imgs/images.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"Badla",
+									language:"Hindi",
+									dimension:"2D",
+									rating:3,
+									imageSrc:"assets/imgs/images4.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								}
+							]
+							
+						});
+						
+db.Theaters.insertOne({theaterId:4,
+					   theaterName:"Cinepolis Juhu",
+					   city:"Mumbai",
+					   movie:[
+								{
+									name:"Pk",
+									language:"Hindi",
+									dimension:"2D",
+									rating:4,
+									imageSrc:"assets/imgs/images3.jpeg.jpg",
+									showTimings:{1000:200,
+												 1200:250,
+												 1500:300,
+												 1930:400
+												 }
+								},
+								{
+									name:"Dark Knight",
+									language:"English",
+									dimension:"3D",
+									rating:5,
+									imageSrc:"assets/imgs/images1.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"The Deathly Hallows-2",
+									language:"Hindi",
+									dimension:"3D",
+									rating:4,
+									imageSrc:"assets/imgs/images.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"Badla",
+									language:"Hindi",
+									dimension:"2D",
+									rating:3,
+									imageSrc:"assets/imgs/images4.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								},
+								{
+									name:"Thor",
+									language:"English",
+									dimension:"3D",
+									rating:3,
+									imageSrc:"assets/imgs/images5.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								}
+							]
+							
+						});						
+						
+db.Theaters.insertOne({theaterId:5,
+					   theaterName:"PVR Taj",
+					   city:"Mumbai",
+					   movie:[
+								{
+									name:"Pk",
+									language:"Hindi",
+									dimension:"2D",
+									rating:4,
+									imageSrc:"assets/imgs/images3.jpeg.jpg",
+									showTimings:{1000:200,
+												 1200:250,
+												 1500:300,
+												 1930:400
+												 }
+								},
+								{
+									name:"Dark Knight",
+									language:"English",
+									dimension:"3D",
+									rating:5,
+									imageSrc:"assets/imgs/images1.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"The Deathly Hallows-2",
+									language:"Hindi",
+									dimension:"3D",
+									rating:4,
+									imageSrc:"assets/imgs/images.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"Badla",
+									language:"Hindi",
+									dimension:"2D",
+									rating:3,
+									imageSrc:"assets/imgs/images4.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								},
+								{
+									name:"Thor",
+									language:"English",
+									dimension:"3D",
+									rating:3,
+									imageSrc:"assets/imgs/images5.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								}
+							]
+							
+						});	
+						
+db.Theaters.insertOne({theaterId:6,
+					   theaterName:"PVR Traffic",
+					   city:"Banglore",
+					   movie:[
+								{
+									name:"Pk",
+									language:"Hindi",
+									dimension:"2D",
+									rating:4,
+									imageSrc:"assets/imgs/images3.jpeg.jpg",
+									showTimings:{1000:200,
+												 1200:250,
+												 1500:300,
+												 1930:400
+												 }
+								},
+								{
+									name:"Dark Knight",
+									language:"English",
+									dimension:"3D",
+									rating:5,
+									imageSrc:"assets/imgs/images1.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"The Deathly Hallows-2",
+									language:"Hindi",
+									dimension:"3D",
+									rating:4,
+									imageSrc:"assets/imgs/images.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"Badla",
+									language:"Hindi",
+									dimension:"2D",
+									rating:3,
+									imageSrc:"assets/imgs/images4.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								},
+								{
+									name:"Thor",
+									language:"English",
+									dimension:"3D",
+									rating:3,
+									imageSrc:"assets/imgs/images5.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								}
+							]
+							
+						});	
+						
+db.Theaters.insertOne({theaterId:7,
+					   theaterName:"INOX Kempgowda",
+					   city:"Banglore",
+					   movie:[
+								{
+									name:"Pk",
+									language:"Hindi",
+									dimension:"2D",
+									rating:4,
+									imageSrc:"assets/imgs/images3.jpeg.jpg",
+									showTimings:{1000:200,
+												 1200:250,
+												 1500:300,
+												 1930:400
+												 }
+								},
+								{
+									name:"Dark Knight",
+									language:"English",
+									dimension:"3D",
+									rating:5,
+									imageSrc:"assets/imgs/images1.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"The Deathly Hallows-2",
+									language:"Hindi",
+									dimension:"3D",
+									rating:4,
+									imageSrc:"assets/imgs/images.jpeg.jpg",
+									showTimings:{1100:250,
+												 1300:270,
+												 1600:300,
+												 2030:450
+												 }
+								},
+								{
+									name:"Badla",
+									language:"Hindi",
+									dimension:"2D",
+									rating:3,
+									imageSrc:"assets/imgs/images4.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								},
+								{
+									name:"Thor",
+									language:"English",
+									dimension:"3D",
+									rating:3,
+									imageSrc:"assets/imgs/images5.jpeg.jpg",
+									showTimings:{900:150,
+												 1400:250,
+												 2130:300
+												}
+								}
+							]
+							
+						});	
+						
+												
